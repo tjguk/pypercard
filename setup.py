@@ -24,6 +24,8 @@ with open(os.path.join(base_dir, 'CHANGES.md'), encoding='utf8') as f:
 install_requires = [
     "Kivy==1.11.1",
     "Kivy-Garden==0.1.4",
+    "kivy.deps.sdl2",
+    "kivy.deps.angle",
 ]
 
 

@@ -1,3 +1,6 @@
+import os, sys
+if sys.platform == 'win32':
+    os.environ['KIVY_GL_BACKEND'] = 'angle_sdl2'
 from .core import Card, CardApp, Inputs, palette
 
 __all__ = ["Card", "CardApp", "Inputs", "palette"]
@@ -14,3 +17,4 @@ __license__ = "MIT"
 __url__ = "https://github.com/ntoll/pypercard"
 __author__ = "Nicholas H.Tollervey"
 __email__ = "ntoll@ntoll.org"
+
